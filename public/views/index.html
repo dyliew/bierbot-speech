@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Speech Sample</title>
+    <meta charset="utf-8" />
+</head>
+
+<body style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; font-size:13px;">
+    <table width="100%">
+        <tr>
+            <td></td>
+            <td>
+                <h1 style="font-weight:500;">Bierbot speech order</h1>
+                <h2 style="font-weight:500;">Carsales Hackathon May 2017</h2>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Speech Format: Give me a beer</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button id="startBtn" disabled="disabled">Start</button>
+                <button id="stopBtn" disabled="disabled">Stop</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Current hypothesis: <span id="hypothesisDiv"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Status: <span id="statusDiv"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Final Status: <span id="finalStatusDiv"></span></td>
+        </tr>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+
+    <script src="scripts/libs/speech.browser.sdk.js"></script>
+
+    <script src="scripts/app/sdk-functions.js"></script>
+    <script src="scripts/app/browser.js"></script>
+</body>
+
+</html>
